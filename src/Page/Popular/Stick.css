@@ -1,0 +1,61 @@
+.reddit_clone-popular_stick {
+  background-color: var(--color-bg);
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border: 2px solid var(--color-border);
+}
+
+.reddit_clone-popular_stick select {
+  border: none;
+}
+.reddit_clone-popular_stick_item {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 0.5rem;
+  align-items: center;
+  cursor: pointer;
+  color: var(--color-text);
+  font-family: var(--font-c);
+  background-color: var(--color-inp);
+  padding: 0.5rem;
+  border-radius: 1rem;
+}
+.reddit_clone-popular_stick_item a {
+  font-family: var(--font-c);
+  color: var(--color-text);
+  font-weight: bold;
+}
+.reddit_clone-popular_stick_item select {
+  font-family: var(--font-c);
+  cursor: pointer;
+  border: none;
+  outline: none;
+
+  font-weight: bold;
+  background-color: var(--color-inp);
+}
+.reddit_clone-popular_stick_item select:hover {
+  border: none;
+}
+@media screen and (max-width: 800px) {
+  .reddit_clone-popular_stick_item {
+    gap: 0;
+    justify-content: space-around;
+  }
+  .reddit_clone-popular_stick :nth-of-type(3) {
+    display: none;
+  }
+  .reddit_clone-popular_stick :nth-of-type(4) {
+    display: none;
+  }
+}
+@media screen and (max-width: 500px) {
+  .reddit_clone-popular_stick > * {
+    flex: 1;
+  }
+}
