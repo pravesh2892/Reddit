@@ -172,7 +172,7 @@ const Post = (props) => {
             ) : (
               <GiAlienSkull />
             )}{" "}
-            {props.userName ? props.userName : "Reddit Post"}
+            {props.userName ? props.userName : "Shivani Post"}
           </p>
         </div>
         <h3 style={{ color: "var(--color-rightsection-footer)" }}>
