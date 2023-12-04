@@ -25,7 +25,7 @@ import Loader from "./Components/Loader";
 import ProfilePage from "./Page/ProfilePage/ProfilePage";
 import Nav from "./Components/Nav/Nav";
 import Menu from "./Components/Menu/Menu";
-const acessKey = "zwTgacSWTV4UweSL2G1cKFPtPMtKQyJG7hBmlYtNKBo";
+
 if (!localStorage.getItem("reddit_post")) {
   localStorage.setItem("reddit_post", JSON.stringify(initialPosts));
 }
